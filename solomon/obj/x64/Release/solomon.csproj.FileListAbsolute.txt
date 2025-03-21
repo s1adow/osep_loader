@@ -1,0 +1,7 @@
+C:\Users\0xfc\source\repos\solomon\solomon\bin\x64\Release\solomon.exe.config
+C:\Users\0xfc\source\repos\solomon\solomon\bin\x64\Release\solomon.exe
+C:\Users\0xfc\source\repos\solomon\solomon\bin\x64\Release\solomon.pdb
+C:\Users\0xfc\source\repos\solomon\solomon\obj\x64\Release\solomon.csproj.AssemblyReference.cache
+C:\Users\0xfc\source\repos\solomon\solomon\obj\x64\Release\solomon.csproj.CoreCompileInputs.cache
+C:\Users\0xfc\source\repos\solomon\solomon\obj\x64\Release\solomon.exe
+C:\Users\0xfc\source\repos\solomon\solomon\obj\x64\Release\solomon.pdb
