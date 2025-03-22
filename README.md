@@ -15,4 +15,8 @@ Compile as Release .
 <br>
 <br>
 ![image](https://github.com/user-attachments/assets/6c770e2f-f0c7-4a4b-98ab-a6496ead6438)
-
+<br>
+<br>
+In order to run the loader with installutil:
+<br>
+``` C:\Windows\Microsoft.NET\Framework64\v4.0.30319\InstallUtil.exe /logfile= /LogToConsole=false .\solomon.exe```
