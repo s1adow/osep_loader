@@ -19,5 +19,5 @@ Compile as Release .
 <br>
 <br>
 In order to run the loader with installutil:
-<br>
+
 ``` C:\Windows\Microsoft.NET\Framework64\v4.0.30319\InstallUtil.exe /logfile= /LogToConsole=false .\solomon.exe```
