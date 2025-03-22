@@ -4,7 +4,7 @@
 
 ```python3 payload_uuid.py -p shell.bin > shell.txt```
 
-In notepad++ Ctrl+h in Replace tab add in Find what field ^(.*)$ and in Replace with field "\1",
+In notepad++ Ctrl+h in Replace tab add in Find what field ```^(.*)$``` and in Replace with field ```"\1",```
 Remove from the last line the comma.
 <br>
 <br>
